@@ -84,7 +84,7 @@ namespace _2014118110
             Decimal tarifa5 = 16m;
 
 
-            //Asigno valores a las propiedades de los objetos
+            //Asigno valores a las propiedades de los objetos 
 
             Cliente Cliente1 = new Cliente();
 
