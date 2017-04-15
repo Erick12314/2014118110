@@ -7,7 +7,15 @@ namespace _2014118110
 {
     public class LugarViaje
     {
+        
         public TipoLugar TipoLugar { get; set; }
         public String NombreLugar { get; set; }
+
+        public LugarViaje(int i)
+        {
+            TipoLugar = new TipoLugar(i);
+           
+            NombreLugar = String.Empty;
+        }
     }
 }

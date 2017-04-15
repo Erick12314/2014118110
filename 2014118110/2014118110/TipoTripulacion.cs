@@ -7,6 +7,21 @@ namespace _2014118110
 {
     public class TipoTripulacion
     {
-        public String Nombre { get; set; }
+        public static int CONDUCTOR = 0;
+        public static int AZAFATA = 1;
+   
+        public String Nombre { get;}
+
+        public TipoTripulacion(int i)
+        {
+            if (i==CONDUCTOR)
+            {
+                Nombre = "Tripulante Conductor";
+            }
+            else
+            {
+                Nombre = "Tripulante Azafata";
+            }
+        }
     }
 }

@@ -7,6 +7,21 @@ namespace _2014118110
 {
     public class TipoLugar
     {
-        public String tipoLugar { get; set; }
+        public static int DESTINO = 0;
+        public static int ORIGEN = 1;
+        public String NombreTipo { set; get; }
+
+        public TipoLugar(int i)
+        {
+            if (i == DESTINO)
+            {
+                NombreTipo = "Origen";
+            }
+            else
+            {
+                NombreTipo = "Destino";
+            }
+            NombreTipo = String.Empty;
+        }
     }
 }

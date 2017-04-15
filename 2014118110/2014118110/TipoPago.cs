@@ -7,6 +7,25 @@ namespace _2014118110
 {
     public class TipoPago
     {
-        public String MetodoPago { get; set; }
+        public static int EFECTIVO = 0;
+        public static int TARJETA = 1;
+        public static int DEPOSITO = 2;
+        public String MetodoPago { get; }
+
+        public TipoPago(int i)
+        {
+            switch (i)
+            {
+                case 0:
+                  MetodoPago = "Efectivo";
+                    break;
+                case 1:
+                    MetodoPago = "Tarjeta de crédito";
+                    break;
+                case 2:
+                    MetodoPago = "Depósito Bancario";
+                    break;
+            }
+        }
     }
 }

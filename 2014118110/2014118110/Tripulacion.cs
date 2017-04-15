@@ -10,13 +10,10 @@ namespace _2014118110
         public TipoTripulacion TipoTripulacion { get; set; }
         public int Cantidad { get; set; }
 
-        public Tripulacion(String nombre, String apellidos, int dni, int edad, int cantidad) : base(nombre, apellidos, dni, edad)
+        public Tripulacion(String nombre, String apellidos, String dni, int edad, int cantidad, int tipotripulacion, Decimal sueldo) : base(nombre, apellidos, dni, edad, sueldo)
         {
-            this.Nombre = nombre;
-            this.Apellidos = apellidos;
-            this.DNI = dni;
-            this.Edad = edad;
-            this.Cantidad = cantidad;
+            Cantidad = cantidad;
+            TipoTripulacion = new TipoTripulacion(tipotripulacion);
         }
     }
 }

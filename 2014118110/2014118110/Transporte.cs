@@ -9,5 +9,16 @@ namespace _2014118110
     {
         public LugarViaje Destino { get; set; }
         public LugarViaje Origen { get; set; }
+        public TipoViaje TipoViaje { get; set; }
+        public Cliente Cliente { get; set; }
+        public Bus Bus { get; set; }
+
+        public Transporte(int tipoviaje, int pasajeros, Tripulacion tripulacion)
+        {
+            TipoViaje = new TipoViaje(tipoviaje);
+            Cliente = new Cliente();
+            Bus = new Bus(pasajeros);
+            this.NombreServicio = "Servicio de Transporte";
+        }
     }
 }

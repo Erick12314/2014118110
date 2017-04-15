@@ -9,13 +9,13 @@ namespace _2014118110
     {
         public String Nombre { get; set; }
         public String Apellidos { get; set; }
-        public int DNI { get; set; }
+        public String DNI { get; set; }
 
         public Cliente()
         {
             Nombre = String.Empty;
             Apellidos = String.Empty;
-            DNI = 0;
+            DNI = String.Empty;
         }
     }
 }

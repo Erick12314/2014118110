@@ -7,6 +7,19 @@ namespace _2014118110
 {
     public class TipoComprobante
     {
-        public String Comprobante { get; set; }
+        public static int BOLETA = 0;
+        public static int FACTURA = 1;
+        public String NombreComprobante { get; } 
+
+        public TipoComprobante(int i)
+        {
+            if(i==BOLETA){
+                NombreComprobante = "Boleta";
+            }
+            else
+            {
+                NombreComprobante = "Factura";
+            }
+        }
     }
 }

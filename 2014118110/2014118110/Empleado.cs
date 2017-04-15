@@ -9,15 +9,17 @@ namespace _2014118110
     {
         public String Nombre { get; set; }
         public String Apellidos { get; set; }
-        public int DNI { get; set; }
+        public String DNI { get; set; }
         public int Edad { get; set; }
+        public Decimal Sueldo { get; set; }
 
-        public Empleado(String nombre, String apellidos, int dni, int edad)
+        public Empleado(String nombre, String apellidos, String dni, int edad, Decimal sueldo)
         {
             Nombre = nombre;
             Apellidos = apellidos;
             DNI = dni;
             Edad = edad;
+            Sueldo = sueldo;
         }
 
     }

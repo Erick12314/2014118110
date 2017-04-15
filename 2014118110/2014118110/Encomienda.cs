@@ -10,6 +10,17 @@ namespace _2014118110
         public LugarViaje Origen { get; set; }
         public LugarViaje Destino { get; set; }
         public String AsuntoEncomienda { get; set; }
+        public double Peso { get; set; }
+        public Bus Bus { get; set; }
         public String NombreDestinatario { get; set; }
+
+
+        public Encomienda()
+        {
+            AsuntoEncomienda = String.Empty;
+            NombreDestinatario = String.Empty;
+            NombreServicio = String.Empty;
+            this.NombreServicio = "Servicio de Encomienda";
+        }
     }
 }
