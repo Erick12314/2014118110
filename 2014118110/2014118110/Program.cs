@@ -10,7 +10,7 @@ namespace _2014118110
 
         public static void Main(string[] args)
         {
-
+            //Inicializo variables que serán asignadas a las propiedades
             var administrativo = "Juan";
             var apellidosadministrativo = "Smith";
             var DNIadministrativo = "1234567";
@@ -35,7 +35,6 @@ namespace _2014118110
             var edadtripulante3 = 38;
             var apellidotripulante3 = "Ramirez";
             var sueldotripulante3 = 1500m;
-
 
             var cliente1 = "Carlos";
             var apellidoscliente1 = "Garcia";
@@ -84,6 +83,9 @@ namespace _2014118110
             Decimal tarifa4 = 18m;
             Decimal tarifa5 = 16m;
 
+
+            //Asigno valores a las propiedades de los objetos
+
             Cliente Cliente1 = new Cliente();
 
             Cliente1.Nombre = cliente1;
@@ -98,13 +100,13 @@ namespace _2014118110
             LugarOrigen1.NombreLugar = lugar1;
             LugarDestino1.NombreLugar = lugar2;
 
-            Bus Bus1 = new Bus(1);
+            Bus Bus1 = new Bus();
 
             Bus1.Placa = placa1;
             Bus1.SerieMotor = seriemotor1;
             Bus1.Tripulacion = tripulacion1;
 
-            Transporte servicio1 = new Transporte(TipoViaje.NORMAL, 1, tripulacion1);
+            Transporte servicio1 = new Transporte(TipoViaje.NORMAL, tripulacion1);
 
             servicio1.Tarifa = tarifa1;
             servicio1.Origen = LugarOrigen1;
@@ -117,8 +119,9 @@ namespace _2014118110
                                             DNIadministrativo, edadadministrativo, sueldoadministrativo);
             Administrativo1.Cargo = cargo;
 
-            Venta venta1 = new Venta(TipoComprobante.BOLETA, TipoPago.EFECTIVO);
 
+
+            Venta venta1 = new Venta(TipoComprobante.BOLETA, TipoPago.EFECTIVO);
 
             venta1.Servicio = servicio1;
             venta1.Administrativo = Administrativo1;
@@ -155,13 +158,13 @@ namespace _2014118110
             LugarOrigen2.NombreLugar = lugar1;
             LugarDestino2.NombreLugar = lugar2;
 
-            Bus Bus2 = new Bus(1);
+            Bus Bus2 = new Bus();
 
             Bus2.Placa = placa1;
             Bus2.SerieMotor = seriemotor1;
             Bus2.Tripulacion = tripulacion2;
 
-            Transporte servicio2 = new Transporte(TipoViaje.VIP, 1, tripulacion2);
+            Transporte servicio2 = new Transporte(TipoViaje.VIP, tripulacion2);
 
             servicio2.Tarifa = tarifa2;
             servicio2.Origen = LugarOrigen2;
@@ -211,13 +214,13 @@ namespace _2014118110
             LugarOrigen3.NombreLugar = lugar1;
             LugarDestino3.NombreLugar = lugar2;
 
-            Bus Bus3 = new Bus(1);
+            Bus Bus3 = new Bus();
 
             Bus3.Placa = placa1;
             Bus3.SerieMotor = seriemotor1;
             Bus3.Tripulacion = tripulacion3;
 
-            Transporte servicio3 = new Transporte(TipoViaje.NORMAL, 1, tripulacion3);
+            Transporte servicio3 = new Transporte(TipoViaje.NORMAL, tripulacion3);
 
             servicio3.Tarifa = tarifa3;
             servicio3.Origen = LugarOrigen3;
@@ -266,7 +269,7 @@ namespace _2014118110
             LugarOrigen4.NombreLugar = lugar1;
             LugarDestino4.NombreLugar = lugar2;
 
-            Bus Bus4 = new Bus(1);
+            Bus Bus4 = new Bus();
 
             Bus4.Placa = placa1;
             Bus4.SerieMotor = seriemotor1;
@@ -280,6 +283,7 @@ namespace _2014118110
             servicio4.NombreDestinatario = nombredestinatario1;
             servicio4.Peso = peso1;
             servicio4.Bus = Bus4;
+            servicio4.AsuntoEncomienda = asunto1;
 
 
             Administrativo Administrativo4 = new Administrativo(administrativo, apellidosadministrativo,
@@ -321,7 +325,7 @@ namespace _2014118110
             LugarOrigen5.NombreLugar = lugar1;
             LugarDestino5.NombreLugar = lugar2;
 
-            Bus Bus5 = new Bus(1);
+            Bus Bus5 = new Bus();
 
             Bus5.Placa = placa1;
             Bus5.SerieMotor = seriemotor1;
@@ -335,6 +339,7 @@ namespace _2014118110
             servicio5.NombreDestinatario = nombredestinatario2;
             servicio5.Peso = peso2;
             servicio5.Bus = Bus5;
+            servicio5.AsuntoEncomienda = asunto2;
 
 
             Administrativo Administrativo5 = new Administrativo(administrativo, apellidosadministrativo,

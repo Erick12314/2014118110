@@ -20,6 +20,7 @@ namespace _2014118110
                 return fecha;
             }
         }
+
         public Venta(int tipocomprobante, int tipopago)
         {
             Cliente = new Cliente();
@@ -28,7 +29,6 @@ namespace _2014118110
             fecha = DateTime.Now;
             NumeroComprobante = 0;
         }
-
-        
+               
     }
 }

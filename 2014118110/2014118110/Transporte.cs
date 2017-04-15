@@ -13,11 +13,11 @@ namespace _2014118110
         public Cliente Cliente { get; set; }
         public Bus Bus { get; set; }
 
-        public Transporte(int tipoviaje, int pasajeros, Tripulacion tripulacion)
+        public Transporte(int tipoviaje, Tripulacion tripulacion)
         {
             TipoViaje = new TipoViaje(tipoviaje);
             Cliente = new Cliente();
-            Bus = new Bus(pasajeros);
+            Bus = new Bus();
             this.NombreServicio = "Servicio de Transporte";
         }
     }
